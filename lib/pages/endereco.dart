@@ -36,7 +36,7 @@ class EnderecoPageState extends State<EnderecoPage> {
     final List<String> listaMunicipios = [];
 
     municipios.forEach((municipio) {
-      if (int.parse(municipio['id']) == estadoId) {
+      if (municipio['estado'] == estadoId) {
         listaMunicipios.add(municipio['nome']);
       }
     });
